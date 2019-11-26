@@ -1,0 +1,16 @@
+<canvas #menuCanvas>
+</canvas>
+<div [@menuSlider]="{value: 'in', params: {period: (duration / 2) + 'ms'}}"
+     [style.width]="width + 'px'">
+  <mat-nav-list class="menu-items">
+    <ng-container *ngFor="let item of ['Пеший курьер', 'Курьер на авто', 'Купить и доставить', 'Курьер на день', 'Другое направление']">
+      <div>
+        <a mat-list-item>
+          <span [style.margin-left]="contentMargin + 'px'">
+            {{ item }}
+          </span>
+        </a>
+      </div>
+    </ng-container>
+  </mat-nav-list>
+</div>

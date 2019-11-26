@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'animation';
+  public menuWidth = 200;
+  public waveWidth = 40;
+  public openDuration = 0.8;
+  public contentMargin = 10;
+
+  public openMenu = false;
+  public formatFunc = (value) => value + 's';
+
+  constructor() {
+  }
+
+  public toggle(): void {
+    this.openMenu = !this.openMenu;
+  }
 }

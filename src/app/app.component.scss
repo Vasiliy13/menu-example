@@ -1,0 +1,21 @@
+:host {
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+}
+
+::ng-deep {
+  mat-toolbar {
+    height: 56px !important;
+    min-height: 56px;
+  }
+
+  .mat-form-field-infix {
+    width: 250px!important;
+  }
+}
+
+.config-form {
+  flex: 1;
+  padding-left: 20px;
+}

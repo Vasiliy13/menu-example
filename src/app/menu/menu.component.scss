@@ -1,0 +1,29 @@
+:host {
+  z-index: 9999;
+  position: absolute;
+  top: 56px;
+  bottom: 0;
+}
+
+::ng-deep {
+  .mat-list-item-content {
+    color: white;
+  }
+  .mat-list-item-content {
+    padding-left: 0!important;
+  }
+}
+
+canvas {
+  display: block;
+  position: absolute;
+}
+
+.menu-items {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
